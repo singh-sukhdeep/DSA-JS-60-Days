@@ -81,6 +81,34 @@ function rotateArrayReversalAlgorithm(arr, d) {
 2)  Finally when A and B are of equal size, block swap them.
  */
 
+function swap(arr) {
+
+}
+
+function rotateBlockSwap(arr, d, n) {
+
+    let leftLength = d;
+    let rightLength = n - d;
+
+    if (leftLength === rightLength) {
+        swap(arr);
+        return;
+    }
+
+    if (leftLength < rightLength) {
+
+    } else {
+
+    }
+}
+
+function arrayRotationBlockSwapAlgorithm(arr, positionsToRotate) {
+    let actualRotations = positionsToRotate % arr.length;
+    if (actualRotations === 0) {
+        return arr;
+    }
+}
+
 
 const d = 4;
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
