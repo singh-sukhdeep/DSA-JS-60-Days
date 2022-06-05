@@ -200,7 +200,7 @@ tree.insert(36);
 
 
 
-console.log(tree.findKthElement(3), '-------------------------');
+console.log(tree.findKthElement(1), '-------------------------');
 // console.log(tree, '---');
 // const elementNode = tree.deleteNode(25);
 
