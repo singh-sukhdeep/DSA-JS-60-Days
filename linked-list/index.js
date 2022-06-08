@@ -31,4 +31,8 @@ linkedList.addElementAtEnd(node7);
 
 linkedList.readAllNodes();
 
-console.log('-------------',linkedList.findElement(560))
+// console.log('-------------',linkedList.findElement(560));
+
+console.log('----- Deleting the nodes --------',linkedList.deleteElement(5600));
+
+linkedList.readAllNodes();

@@ -19,7 +19,7 @@ class LinkedList {
         if (node.next === null) {
             return null;
         }
-  
+
         this.readAllNodesRecur(node.next);
     }
 
@@ -49,7 +49,7 @@ class LinkedList {
     }
 
     findElement(value) {
-        return this.findElementRecur(this.head,value);
+        return this.findElementRecur(this.head, value);
     }
 
     findElementRecur(node, value) {
@@ -59,12 +59,40 @@ class LinkedList {
         if (node.prop === value) {
             return node;
         }
-        return this.findElementRecur(node.next,value);
+        return this.findElementRecur(node.next, value);
     }
 
 
-    deleteElement() {
+    deleteElement(val) {
 
+        let head = this.head;
+
+        let currentNode = this.head;
+        let prevNode = this.head;
+        let condition = true;
+        while (currentNode.next!==null) {
+            if (currentNode.prop === val) {
+                prevNode.next = currentNode.next;
+                break;
+            } else {
+                prevNode = currentNode;
+                currentNode = currentNode.next;
+            }
+        }
+    }
+
+    deleteElementRecur(node, value) {
+        if (node === null) {
+            return null;
+        }
+
+        if (node.prop === value) {
+            return node.next;
+        }
+
+        node.next = this.deleteElementRecur(node.next, value);
+        
+        return node;
     }
 
 
