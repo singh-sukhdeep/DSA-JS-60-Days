@@ -2,7 +2,7 @@ import Node from './node.js';
 import LinkedList from './linked-list.js';
 
 
-// Javascript Linked List 
+// Javascript Single Linked List 
 
 
 const node1 = new Node(56);
