@@ -17,7 +17,7 @@ class DoublyLikedList {
     }
 
 
-    addNode(value) {
+    addNodeAtEnd(value) {
         const newNode = new NodeDoublyLinkedList(value);
 
         if(this.head===null){
@@ -25,10 +25,11 @@ class DoublyLikedList {
             return;
         }
         let currentNode = this.head;
+        
         while (currentNode !== null) {
             if (currentNode.next === null) {
                 newNode.prev = currentNode;
-                newNode.next = newNode;
+                currentNode.next = newNode;
                 break;
             }
             currentNode=currentNode.next;
