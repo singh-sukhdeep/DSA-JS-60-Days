@@ -13,10 +13,25 @@
  * Representing the graph with adjacency Matrix
  */
 
-const Graph = [
-    [1, 0, 1, 0, 0],
-    [0, 1, 1, 0, 0],
-    [1, 0, 1, 0, 0],
-    [1, 0, 1, 1, 0],
-    [1, 0, 1, 0, 1],
-]
+// const Graph = [
+//     [1, 0, 1, 0, 0],
+//     [0, 1, 1, 0, 0],
+//     [1, 0, 1, 0, 0],
+//     [1, 0, 1, 1, 0],
+//     [1, 0, 1, 0, 1],
+// ]
+
+
+
+class Graph {
+    list = {};
+
+    constructor() {
+
+    }
+
+
+    addEdge(source,destination){
+
+    }
+}
