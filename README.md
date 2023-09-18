@@ -6,8 +6,17 @@ Javascript is a lightweight interpreted <span title="Just-in-time (JIT) compilat
 
 ### Hoisting
 
+JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
+
+1. Being able to use a variable's value in its scope before the line it is declared. **("Value hoisting")**
+2. Being able to reference a variable in its scope before the line it is declared, without throwing a  
+  ReferenceError but the value is always undefined. **("Declaration hoisting")**
+3. 
+
 Scope of variables
 
-var     -   global,module,function
-let     -   global,module,function,block
-const   -   globale,module,function,block
+- var     -   global,module,function
+- let     -   global,module,function,block
+- const   -   globale,module,function,block
+
+
