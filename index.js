@@ -7,3 +7,7 @@ console.log(decimalExample);
 console.log(octalExmaplle);
 console.log(hexaExample);
 console.log(binaryExample);
+
+
+const b = new Boolean(false);
+console.log(b,'--')
