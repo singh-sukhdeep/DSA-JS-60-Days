@@ -1,10 +1,9 @@
-const { cloneDeep } = require('loadash');
+const decimalExample = 123; // Base 10
+const octalExmaplle = 0o145; // Base 8
+const hexaExample = 0x3242abedf; // Base 16
+const binaryExample = 0B11; // Binary Number;
 
-let firstObject = {
-    name: 'Test Name',
-    age: 29,
-    coutriesLived: ['US', 'Canada', 'UK']
-};
-
-let secondObject = Object.create(firstObject);
-
+console.log(decimalExample);
+console.log(octalExmaplle);
+console.log(hexaExample);
+console.log(binaryExample);

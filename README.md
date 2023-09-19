@@ -17,6 +17,25 @@ Scope of variables
 
 - var     -   global,module,function
 - let     -   global,module,function,block
-- const   -   globale,module,function,block
+- const   -   global,module,function,block
 
 
+A variable declared with let, const, or class is said to be in a **"temporal dead zone" (TDZ)** from the start of the block until code execution reaches the place where the variable is declared and initialized.
+
+
+### Integer literals
+
+```Javascript
+const decimalExample = 123; // Base 10
+// Outputs : 123
+
+const octalExmaplle = 0o145; // Base 8
+// Outputs : 101
+
+const hexaExample = 0x3242abedf; // Base 16
+// Outputs : 13491683039
+
+const binaryExample = 0B11; // Binary Number;
+// Outputs : 3
+
+```
